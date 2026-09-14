@@ -1,0 +1,27 @@
+name: Native checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Toolchain
+        run: xcodebuild -version
+      - name: Core protocol tests
+        run: swift test
+      - name: Check generated project
+        run: |
+          python3 scripts/generate-project.py
+          git diff --exit-code -- PalmRelay.xcodeproj Apps/iOS/Info.plist Apps/Mac/Info.plist
+      - name: Build iPhone app
+        run: xcodebuild -quiet -project PalmRelay.xcodeproj -scheme PalmRelay -configuration Debug -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' -derivedDataPath build/ios CODE_SIGNING_ALLOWED=NO build
+      - name: Build Mac companion
+        run: xcodebuild -quiet -project PalmRelay.xcodeproj -scheme PalmRelayCompanion -configuration Debug -destination 'platform=macOS,arch=arm64' -derivedDataPath build/mac CODE_SIGNING_ALLOWED=NO build

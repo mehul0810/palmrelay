@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+"archiveVersion" = "1";
+"classes" = {
+
+};
+"objectVersion" = "56";
+"objects" = {
+"AD7FB12CAAB12944291FD9D2" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "Sources/RelayCore/Protocol.swift";
+"sourceTree" = "<group>";
+};
+"8F725FE0566AA44AB8C8D7E5" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "AD7FB12CAAB12944291FD9D2";
+};
+"C89F32CBB17F14BA7A62354C" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "Sources/RelayCore/SecureChannel.swift";
+"sourceTree" = "<group>";
+};
+"E6AC86A2CC717D9A01044CAF" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "C89F32CBB17F14BA7A62354C";
+};
+"833C4C9358006DFC007B5418" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "Sources/RelayLink/PeerLink.swift";
+"sourceTree" = "<group>";
+};
+"3F3AB4D2E1DD1966452708AF" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "833C4C9358006DFC007B5418";
+};
+"3455409A8DBBB7B67DA5E08E" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "Apps/iOS/DeckView.swift";
+"sourceTree" = "<group>";
+};
+"E477CC21090CF7936757BC84" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "3455409A8DBBB7B67DA5E08E";
+};
+"E0BE316B8A164415923A0FF1" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "Apps/iOS/PalmRelayApp.swift";
+"sourceTree" = "<group>";
+};
+"9EB18F8E6E98A9E960EDD414" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "E0BE316B8A164415923A0FF1";
+};
+"A488ECFB9DAD1B3EBABC85F2" = {
+"isa" = "PBXSourcesBuildPhase";
+"buildActionMask" = "2147483647";
+"files" = ("8F725FE0566AA44AB8C8D7E5", "E6AC86A2CC717D9A01044CAF", "3F3AB4D2E1DD1966452708AF", "E477CC21090CF7936757BC84", "9EB18F8E6E98A9E960EDD414");
+"runOnlyForDeploymentPostprocessing" = "0";
+};
+"ACC5F0DAF861C664CC460F81" = {
+"isa" = "PBXFrameworksBuildPhase";
+"buildActionMask" = "2147483647";
+"files" = ();
+"runOnlyForDeploymentPostprocessing" = "0";
+};
+"D2B712DCE40FCE35480E0567" = {
+"isa" = "PBXFileReference";
+"explicitFileType" = "wrapper.application";
+"path" = "PalmRelay.app";
+"sourceTree" = "BUILT_PRODUCTS_DIR";
+};
+"BA46535E26EB02E1FCE77B83" = {
+"isa" = "XCBuildConfiguration";
+"name" = "Debug";
+"buildSettings" = {
+"PRODUCT_NAME" = "$(TARGET_NAME)";
+"PRODUCT_BUNDLE_IDENTIFIER" = "com.mehulgohil.palmrelay";
+"SDKROOT" = "iphoneos";
+"SWIFT_VERSION" = "5.0";
+"CODE_SIGN_STYLE" = "Automatic";
+"GENERATE_INFOPLIST_FILE" = "NO";
+"INFOPLIST_FILE" = "Apps/iOS/Info.plist";
+"MARKETING_VERSION" = "0.1.0";
+"CURRENT_PROJECT_VERSION" = "1";
+"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG";
+"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+"CLANG_ENABLE_MODULES" = "YES";
+"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+"TARGETED_DEVICE_FAMILY" = "1,2";
+"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+"SUPPORTS_MACCATALYST" = "NO";
+};
+};
+"EA01B47A875200E69EFD505F" = {
+"isa" = "XCBuildConfiguration";
+"name" = "Release";
+"buildSettings" = {
+"PRODUCT_NAME" = "$(TARGET_NAME)";
+"PRODUCT_BUNDLE_IDENTIFIER" = "com.mehulgohil.palmrelay";
+"SDKROOT" = "iphoneos";
+"SWIFT_VERSION" = "5.0";
+"CODE_SIGN_STYLE" = "Automatic";
+"GENERATE_INFOPLIST_FILE" = "NO";
+"INFOPLIST_FILE" = "Apps/iOS/Info.plist";
+"MARKETING_VERSION" = "0.1.0";
+"CURRENT_PROJECT_VERSION" = "1";
+"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "";
+"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+"CLANG_ENABLE_MODULES" = "YES";
+"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+"TARGETED_DEVICE_FAMILY" = "1,2";
+"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+"SUPPORTS_MACCATALYST" = "NO";
+};
+};
+"7FB9A328CCB10715AA508181" = {
+"isa" = "XCConfigurationList";
+"buildConfigurations" = ("BA46535E26EB02E1FCE77B83", "EA01B47A875200E69EFD505F");
+"defaultConfigurationIsVisible" = "0";
+"defaultConfigurationName" = "Release";
+};
+"F45EF138A703A263B8E23453" = {
+"isa" = "PBXNativeTarget";
+"name" = "PalmRelay";
+"productName" = "PalmRelay";
+"productType" = "com.apple.product-type.application";
+"productReference" = "D2B712DCE40FCE35480E0567";
+"buildConfigurationList" = "7FB9A328CCB10715AA508181";
+"buildPhases" = ("A488ECFB9DAD1B3EBABC85F2", "ACC5F0DAF861C664CC460F81");
+"buildRules" = ();
+"dependencies" = ();
+};
+"4C26A768A208B6E49A0D4BDC" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "AD7FB12CAAB12944291FD9D2";
+};
+"953E5373E548AB04DAA98150" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "C89F32CBB17F14BA7A62354C";
+};
+"3DEEA02927DC08D43FF03FAD" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "833C4C9358006DFC007B5418";
+};
+"215FE1FC743AC928A79534DE" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "Apps/Mac/CompanionApp.swift";
+"sourceTree" = "<group>";
+};
+"17B699832D51FD0A13B56FDD" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "215FE1FC743AC928A79534DE";
+};
+"E606F0B03515D2D7E25D2D9F" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "Apps/Mac/DesktopAdapter.swift";
+"sourceTree" = "<group>";
+};
+"4DCF47B23BDE0C120B35418A" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "E606F0B03515D2D7E25D2D9F";
+};
+"D6A6A3C60643D9FA8DF23A71" = {
+"isa" = "PBXSourcesBuildPhase";
+"buildActionMask" = "2147483647";
+"files" = ("4C26A768A208B6E49A0D4BDC", "953E5373E548AB04DAA98150", "3DEEA02927DC08D43FF03FAD", "17B699832D51FD0A13B56FDD", "4DCF47B23BDE0C120B35418A");
+"runOnlyForDeploymentPostprocessing" = "0";
+};
+"B253B2BD6A937324105957D4" = {
+"isa" = "PBXFrameworksBuildPhase";
+"buildActionMask" = "2147483647";
+"files" = ();
+"runOnlyForDeploymentPostprocessing" = "0";
+};
+"384C655AFD28E92B8F95F22B" = {
+"isa" = "PBXFileReference";
+"explicitFileType" = "wrapper.application";
+"path" = "PalmRelayCompanion.app";
+"sourceTree" = "BUILT_PRODUCTS_DIR";
+};
+"965015026B16890763B6C2B4" = {
+"isa" = "XCBuildConfiguration";
+"name" = "Debug";
+"buildSettings" = {
+"PRODUCT_NAME" = "$(TARGET_NAME)";
+"PRODUCT_BUNDLE_IDENTIFIER" = "com.mehulgohil.palmrelay.companion";
+"SDKROOT" = "macosx";
+"SWIFT_VERSION" = "5.0";
+"CODE_SIGN_STYLE" = "Automatic";
+"GENERATE_INFOPLIST_FILE" = "NO";
+"INFOPLIST_FILE" = "Apps/Mac/Info.plist";
+"MARKETING_VERSION" = "0.1.0";
+"CURRENT_PROJECT_VERSION" = "1";
+"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG";
+"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+"CLANG_ENABLE_MODULES" = "YES";
+"MACOSX_DEPLOYMENT_TARGET" = "14.0";
+"ENABLE_APP_SANDBOX" = "NO";
+"ENABLE_HARDENED_RUNTIME" = "YES";
+"COMBINE_HIDPI_IMAGES" = "YES";
+};
+};
+"EAB57A8D902FABB0FC6C468A" = {
+"isa" = "XCBuildConfiguration";
+"name" = "Release";
+"buildSettings" = {
+"PRODUCT_NAME" = "$(TARGET_NAME)";
+"PRODUCT_BUNDLE_IDENTIFIER" = "com.mehulgohil.palmrelay.companion";
+"SDKROOT" = "macosx";
+"SWIFT_VERSION" = "5.0";
+"CODE_SIGN_STYLE" = "Automatic";
+"GENERATE_INFOPLIST_FILE" = "NO";
+"INFOPLIST_FILE" = "Apps/Mac/Info.plist";
+"MARKETING_VERSION" = "0.1.0";
+"CURRENT_PROJECT_VERSION" = "1";
+"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "";
+"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+"CLANG_ENABLE_MODULES" = "YES";
+"MACOSX_DEPLOYMENT_TARGET" = "14.0";
+"ENABLE_APP_SANDBOX" = "NO";
+"ENABLE_HARDENED_RUNTIME" = "YES";
+"COMBINE_HIDPI_IMAGES" = "YES";
+};
+};
+"2C362F940EF2E3F5E7739DF8" = {
+"isa" = "XCConfigurationList";
+"buildConfigurations" = ("965015026B16890763B6C2B4", "EAB57A8D902FABB0FC6C468A");
+"defaultConfigurationIsVisible" = "0";
+"defaultConfigurationName" = "Release";
+};
+"FF247BEF92CD837371A9097F" = {
+"isa" = "PBXNativeTarget";
+"name" = "PalmRelayCompanion";
+"productName" = "PalmRelayCompanion";
+"productType" = "com.apple.product-type.application";
+"productReference" = "384C655AFD28E92B8F95F22B";
+"buildConfigurationList" = "2C362F940EF2E3F5E7739DF8";
+"buildPhases" = ("D6A6A3C60643D9FA8DF23A71", "B253B2BD6A937324105957D4");
+"buildRules" = ();
+"dependencies" = ();
+};
+"0A3E27B8CA818264D75C8D81" = {
+"isa" = "PBXGroup";
+"name" = "Products";
+"children" = ("D2B712DCE40FCE35480E0567", "384C655AFD28E92B8F95F22B");
+"sourceTree" = "<group>";
+};
+"0D6E4079E36703EBD37C0072" = {
+"isa" = "PBXGroup";
+"children" = ("AD7FB12CAAB12944291FD9D2", "C89F32CBB17F14BA7A62354C", "833C4C9358006DFC007B5418", "3455409A8DBBB7B67DA5E08E", "E0BE316B8A164415923A0FF1", "215FE1FC743AC928A79534DE", "E606F0B03515D2D7E25D2D9F", "0A3E27B8CA818264D75C8D81");
+"sourceTree" = "<group>";
+};
+"2B23A31EEC75B029432F2445" = {
+"isa" = "XCBuildConfiguration";
+"name" = "Debug";
+"buildSettings" = {
+
+};
+};
+"07CA1E69F6068DEA30A4DA6B" = {
+"isa" = "XCBuildConfiguration";
+"name" = "Release";
+"buildSettings" = {
+
+};
+};
+"821C39C22847DEDBBA29010E" = {
+"isa" = "XCConfigurationList";
+"buildConfigurations" = ("2B23A31EEC75B029432F2445", "07CA1E69F6068DEA30A4DA6B");
+"defaultConfigurationIsVisible" = "0";
+"defaultConfigurationName" = "Release";
+};
+"244210E48437B6556980A702" = {
+"isa" = "PBXProject";
+"attributes" = {
+"LastUpgradeCheck" = "2600";
+};
+"buildConfigurationList" = "821C39C22847DEDBBA29010E";
+"compatibilityVersion" = "Xcode 14.0";
+"developmentRegion" = "en";
+"knownRegions" = ("en", "Base");
+"mainGroup" = "0D6E4079E36703EBD37C0072";
+"productRefGroup" = "0A3E27B8CA818264D75C8D81";
+"projectDirPath" = "";
+"projectRoot" = "";
+"targets" = ("F45EF138A703A263B8E23453", "FF247BEF92CD837371A9097F");
+};
+};
+"rootObject" = "244210E48437B6556980A702";
+}
