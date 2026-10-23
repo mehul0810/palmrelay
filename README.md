@@ -68,3 +68,7 @@ No private OpenAI endpoint calls, credential scraping, JavaScript injection, glo
 The Accessibility adapter uses public macOS APIs but is **not an official OpenAI control API**. UI labels and state availability can change. A production release also needs device testing, accessibility review, application icons, signing, privacy disclosures, encryption/export review, and name clearance. No App Store/TestFlight submission is configured.
 
 Reference: [Codex Micro controls](https://learn.chatgpt.com/docs/features/codex-micro), [Codex App Server](https://learn.chatgpt.com/docs/app-server). App Server is not used here: access to the existing desktop task and Fast Mode setting has not been established through it.
+
+## Task discovery foundation
+
+RelayCore includes a read-only task catalog with regression tests for documented App Server summaries and status events. It is not connected to the live desktop. See [Task discovery](docs/TASK-DISCOVERY.md) for freshness, pagination, and the remaining iPhone-only integration decision.
